@@ -1,0 +1,29 @@
+/* This class achieves the "Left-Aligned Labels" and "Vertically Stacked Colons" layout */
+.aligned-colon-layout {
+    /* Use CSS Grid */
+    display: grid;
+   
+    /* CRITICAL GRID DEFINITION: */
+    /* Column 1 (max-content): Takes the width of the longest label, ensuring colons stack. */
+    /* Column 2 (1fr): Takes the rest of the available width for the value. */
+    grid-template-columns: max-content 1fr;
+    line-height: 1.25;
+}
+ 
+/* Style for the Label + Colon element (First Column) */
+.aligned-colon-layout > .label-col {
+    /* Ensures the label text starts flush left within the max-content column */
+    text-align: left;
+   
+    /* Adds space between the colon and the value text */
+    padding-right: 8px;
+   
+    /* Guarantees the label text never wraps, respecting the max-content calculation */
+    white-space: nowrap;
+}
+ 
+/* Style for the Value element (Second Column) */
+.aligned-colon-layout > .value-col {
+    /* Ensures long value text is handled correctly, allowing it to wrap if needed */
+    overflow: hidden;
+}
