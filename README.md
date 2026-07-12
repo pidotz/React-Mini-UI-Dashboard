@@ -1,27 +1,12 @@
-# Mini UI Dashboard
+# React + Vite
 
-A mini dashboard UI built with **React** and **Vite** as a self-learning project to explore modern frontend development.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- ⚡ Built with React + Vite
-- 🎨 Styled using Tailwind CSS
-- ✨ Smooth animations with Framer Motion
-- 📊 Interactive dashboard with clickable data tiles
-- 🔍 Detailed view for each dashboard tile
-- 🌈 Modern UI with glow effects and hover animations
-- 📱 Responsive layout
-- 🛣️ Navigation powered by React Router DOM
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Tech Stack
+## Expanding the ESLint configuration
 
-- React
-- Vite
-- Tailwind CSS
-- Framer Motion
-- React DOM
-- React Router DOM
-
-## Purpose
-
-This project was created to practice building a modern, responsive, and interactive dashboard while gaining hands-on experience with React, Vite, Tailwind CSS, Framer Motion, and React Router DOM.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
